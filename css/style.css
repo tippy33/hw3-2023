@@ -1,0 +1,130 @@
+body{
+   /* Set line spacing */
+   line-height: 1.5; /* NOT single-spaced */
+}
+
+
+header, nav{
+    /* Set padding and margin */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 25px;
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    margin-right: 180px;
+    padding: 12px;
+    font-size: 25px;
+    background-color: bisque;
+}
+
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+}
+
+a:visited{
+    /* Set color */
+    color: black;
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    color: black;
+    text-transform: uppercase;
+    text-underline-offset: 10px;
+}
+
+
+
+h1{
+   /*Set font and font size*/
+   font-family: 'Merriweather', 'Anton', 'Times New Roman', sans-serif;
+   font-size: 40px;
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-family: 'Anton', 'Times New Roman', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3{
+    /*Set font size*/
+    font-size: 20px;
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin-top: 10px;
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    width: 90%;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;  /* This stretches grid boxes from start to end */
+    row-gap: 10px;
+    background-color: rgb(81, 100, 151);
+    border-radius: 20px;
+    margin: auto;  /* this puts the grid box in the center of the page! */
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border-radius: 20px;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    width: 90%;
+    margin: auto; /* margin auto works only when displaly is block! */
+    display: block;
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    box-shadow: 10px 0px 5px darkgray;
+}
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+    box-shadow: -10px 0px 5px darkgray;
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+     box-shadow: 10px 0px 5px darkgray, -10px 0px 5px darkgray;
+}
+    
+
+p + p {
+     /* Set indentation */
+    text-indent: 10px;
+  }
+  
+p{
+     /* Set margin */
+     margin-top: 10px;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    line-height: 1;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
