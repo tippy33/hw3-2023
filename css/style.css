@@ -1,24 +1,21 @@
 body{
    /* Set line spacing */
-   line-height: 1.5; /* NOT single-spaced */
+   line-height: 1.5; /* 1. NOT single-spaced */
 }
 
 
 header, nav{
     /* Set padding and margin */
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 10px;  /* 2. paddings should be all different */
+    padding-bottom: 15px;
     padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 20px;
-    margin-right: 25px;
+    padding-right: 25px;
+    margin: 5px;  /* 2. one value for margin*/ 
 }
 nav ul li{
     /* Set display, margin, padding, font-size, background-color */
-    display: inline-block;
-    margin-right: 180px;
+    display: inline-block;  /* 3. horizontally */
+    margin-right: 180px; /* 3. space between */
     padding: 12px;
     font-size: 25px;
     background-color: bisque;
@@ -26,57 +23,57 @@ nav ul li{
 
 nav a{
     /* Set text decoration*/
-    text-decoration: none;
+    text-decoration: none;  /* 4. remove line even when visited */
 }
 
 a:visited{
     /* Set color */
-    color: black;
+    color: black;  /* 5. black even after clicked */
 }
 
 nav a.current{
     /* Set text decoration, transformation, and underline properties */
     text-decoration: underline;
-    text-decoration-style: wavy;
+    text-decoration-style: wavy;  /* 6. wavy underline */
     color: black;
-    text-transform: uppercase;
-    text-underline-offset: 10px;
+    text-transform: uppercase;  /* 6. all texts uppercase */
+    text-underline-offset: 10px;  /* 6. move down the underline a bit */
 }
 
 
 
 h1{
    /*Set font and font size*/
-   font-family: 'Merriweather', 'Anton', 'Times New Roman', sans-serif;
-   font-size: 40px;
+   font-family: 'Merriweather', 'Anton', "Times New Roman", "sans-serif"; /* 7. Merriweather, Anton, Times New Roman, fallback*/
+   font-size: 40px; /* 7. larger font size */
 }
 
 h2{
     /*Set font, font size, and alignment*/
-    font-family: 'Anton', 'Times New Roman', sans-serif;
-    font-size: 30px;
-    text-align: center;
+    font-family: 'Anton', 'Times New Roman', 'sans-serif';  /* 8. Anton, Times New Roman, fallback */
+    font-size: 30px;  /* 8. larger font size */
+    text-align: center;  /* 8. centered */
 }
 
 h3{
     /*Set font size*/
-    font-size: 20px;
+    font-size: 20px;  /* 9. larger font */
 }
 
 h1, h2, h3{
     /*Set margin */
-    margin-top: 10px;
+    margin-top: 10px;  /* 10. add margin top */
 }
 .grid{
     /*Set width, margin, border properties, background color, and grid properties */
-    display: grid;
-    width: 90%;
-    grid-template-columns: 30% 30% 30%;
-    justify-content: space-between;  /* This stretches grid boxes from start to end */
-    row-gap: 10px;
+    display: grid;  /* 11. grid */
+    width: 90%;  /* 11-a */
+    grid-template-columns: 30% 30% 30%;  /* 11-c */
+    justify-content: space-between;  /* 11-d This stretches grid boxes from start to end */
+    row-gap: 10px;  /* 11-e */
     background-color: rgb(81, 100, 151);
-    border-radius: 20px;
-    margin: auto;  /* this puts the grid box in the center of the page! */
+    border-radius: 20px;  /* 11-b */
+    margin: auto;  /* 12. this puts the grid box in the center of the page! */
 }
 
 .grid div{
@@ -89,43 +86,43 @@ h1, h2, h3{
 
 .grid img{
     /* Set width, margin, and display */
-    width: 90%;
-    margin: auto; /* margin auto works only when displaly is block! */
-    display: block;
+    width: 90%; /* 12. img width */
+    margin: auto; /* 12. margin auto works only when displaly is block! */
+    display: block; /* 12. img block */
 }
 
 
 .grid div:nth-child(3n+1)  {
     /* Set box shadow */
-    box-shadow: 10px 0px 5px darkgray;
+    box-shadow: 10px 0px 5px darkgray;  /* 13. 10px shadow, 0px vertical, 5px blur */
 }
 
 .grid div:nth-child(3n)  {
     /* Set box shadow */ 
-    box-shadow: -10px 0px 5px darkgray;
+    box-shadow: -10px 0px 5px darkgray;  /* 14. 10px left shadow, 0px vertical, 5px blur */
 }
 
 .grid div:nth-child(3n+2)  {
      /* Set box shadow */
-     box-shadow: 10px 0px 5px darkgray, -10px 0px 5px darkgray;
+     box-shadow: 10px 0px 5px darkgray, -10px 0px 5px darkgray;  /* 15. both sides shadow */
 }
     
 
 p + p {
      /* Set indentation */
-    text-indent: 10px;
+    text-indent: 10px;  /* 16. indent */ 
   }
   
 p{
      /* Set margin */
-     margin-top: 10px;
+     margin-top: 10px;  /* 17. margin from element above */
 }
 
 
 .grid ul li{
     /* Set margin, line-spacing, list styling  */
-    line-height: 1;
-    list-style-image: url("../images/sketchbook.png");
-    margin-left: 60px;
+    line-height: 1;   /* 18. single space */
+    list-style-image: url("../images/sketchbook.png");  /* 18. use img sketchbook.png */
+    margin-left: 60px;  /* 18. margin left & bottom */
     margin-bottom: 10px;
 }
